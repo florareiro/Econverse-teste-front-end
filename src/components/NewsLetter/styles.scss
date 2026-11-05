@@ -1,0 +1,103 @@
+@import "../../styles/variables";
+
+.newsletter {
+  width: 100%;
+  height: 162px;
+
+  background-color: $roxo;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__info {
+    color: $branco;
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+
+    p {
+      max-width: 515px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  &__fields {
+    display: flex;
+    gap: 0.5rem;
+
+    input {
+      max-width: 233px;
+      height: 42px;
+      box-sizing: border-box;
+      padding-left: 20px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      background-color: $branco;
+      color: $cinza-escuro;
+      font-weight: 400;
+      font-size: 14px;
+
+      &::placeholder {
+        color: $cinza-medio;
+      }
+
+      &:focus {
+        outline: 2px solid $amarelo;
+      }
+    }
+
+    button {
+      height: 40px;
+      padding: 0 20px;
+      width: 157px;
+      border: none;
+      border-radius: 5px;
+
+      background-color: $amarelo;
+      color: $roxo;
+
+      font-size: 14px;
+      font-weight: 600;
+
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: darken($amarelo, 8%);
+      }
+    }
+  }
+
+  &__terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    color: $branco;
+    font-size: 14px;
+
+    input {
+      width: 14px;
+      height: 14px;
+      margin: 0;
+      accent-color: $amarelo;
+      cursor: pointer;
+    }
+  }
+}

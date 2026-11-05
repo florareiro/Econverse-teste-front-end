@@ -1,0 +1,60 @@
+.icon-card {
+  margin: 3rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 128px;
+  height: 170px;
+  text-decoration: none;
+  cursor: pointer;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 128px;
+    height: 128px;
+    box-sizing: border-box;
+
+    background-color: #f4f4f4;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.13);
+
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+  &__image {
+    width: 61px;
+    height: 61px;
+    object-fit: contain;
+
+    display: inline-block;
+    transition: filter 0.2s ease-in-out;
+  }
+
+  &__title {
+    margin-top: 1.5rem;
+    color: $cinza-escuro;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    transition: color 0.2s ease-in-out;
+  }
+
+  &:hover {
+    .icon-card__container {
+      background-color: $branco;
+    }
+    .icon-card__image {
+      filter: brightness(0) saturate(100%) invert(25%) sepia(35%)
+        saturate(3000%) hue-rotate(215deg) brightness(90%) contrast(95%);
+    }
+
+    .icon-card__title {
+      font-weight: 600;
+      color: $azul;
+    }
+  }
+}

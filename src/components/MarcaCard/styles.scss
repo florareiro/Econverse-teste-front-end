@@ -1,0 +1,20 @@
+.marca-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 211px;
+  height: 211px;
+  flex-shrink: 0;
+
+  background-color: #fff;
+  border-radius: 50%;
+
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.13);
+
+  &__logo {
+    width: 117px;
+    max-height: 117px;
+    object-fit: contain;
+  }
+}

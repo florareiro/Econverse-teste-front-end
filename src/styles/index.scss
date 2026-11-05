@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./reset.scss";
+@import "./variables.scss";
+body {
+  font-family: $fonte-primaria;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.justify-center {
+  display: flex;
+  justify-content: space-around;
+}
+.justify-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+.icon {
+  display: inline-block;
+  transition: filter 0.2s ease-in-out;
+}
+
+.icon-div:hover .icon {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(35%) saturate(3000%)
+    hue-rotate(215deg) brightness(90%) contrast(95%);
+}
+
+.title {
+  color: $azul;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.my3 {
+  margin-block: 3rem;
+}
+
+.my5 {
+  margin-block: 5rem;
+}
+
+.mt6 {
+  margin-top: 6rem;
+}
+
+.mb4 {
+  margin-bottom: 4rem;
+}
+
+.gap42 {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+.max-w-lg {
+  max-width: 1280px;
+  margin-inline: auto;
+}
