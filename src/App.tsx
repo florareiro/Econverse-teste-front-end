@@ -18,6 +18,7 @@ import { PartnerCard } from "./components/PartnerCard";
 import parceirosBg from "../src/assets/parceiros-bg.png";
 import { MarcaCard } from "./components/MarcaCard";
 import { Newsletter } from "./components/NewsLetter";
+import { Footer } from "./components/Footer";
 function App() {
   const categories = [
     "CELULARES",
@@ -175,6 +176,7 @@ function App() {
 
         <Newsletter />
       </main>
+      <Footer />
     </>
   );
 }
