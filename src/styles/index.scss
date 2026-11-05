@@ -13,7 +13,8 @@ body {
 }
 .justify-center {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 5px;
 }
 .justify-evenly {
   display: flex;

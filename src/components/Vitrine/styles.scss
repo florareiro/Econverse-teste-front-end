@@ -11,7 +11,7 @@
   }
 
   &__viewport {
-    width: 95%;
+    width: 96%;
     margin: auto;
     overflow: hidden;
 
@@ -24,7 +24,7 @@
   &__track {
     display: flex;
     align-items: stretch;
-    gap: 7px;
+    gap: 11px;
     transition: transform 0.4s ease-in-out;
     will-change: transform;
     padding-left: 6px;

@@ -48,7 +48,7 @@ function App() {
         <Hero />
 
         {/* Categorias  */}
-        <section className="flex justify-center">
+        <section className="justify-center">
           <CategoryCard
             title="Tecnologia"
             image={computer}
@@ -150,7 +150,7 @@ function App() {
         {/* Marcas  */}
         <section>
           <h2 className="title mt6 mb4">Navegue por marcas</h2>
-          <div className=" gap42 justify-evenly mb4">
+          <div className=" gap42 justify-center mb4">
             <MarcaCard name="logo" logo={logo} link="#" />
             <MarcaCard name="logo" logo={logo} link="#" />
             <MarcaCard name="logo" logo={logo} link="#" />
